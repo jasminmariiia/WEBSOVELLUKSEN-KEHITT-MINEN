@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS03 Advanced CSS</title>
+    <title>WS04 Page Layout</title>
 
-    <!-- Table styling (old) -->
+    <!-- Table styling -->
     <style>
         table, th, td {
             border: 1px solid black;
@@ -18,9 +18,24 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+<header>
     <h1>Jasmin Antensteiner</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#layouts">Layouts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about">
     <p>I am an IT bachelor student and I am learning advanced CSS.</p>
 
     <img src="jasmin.JPG" alt="Picture of Jasmin" width="200" class="filter-image">
@@ -57,7 +72,6 @@
         <li>Item 4</li>
     </ul>
 
-    <!-- Link -->
     <p>Visit: <a href="https://www.aurinkomatkat.fi" target="_blank">Aurinkomatkat</a></p>
 
     <div class="content-box">
@@ -91,8 +105,37 @@
             <td>Ongoing</td>
         </tr>
     </table>
+</section>
 
-    <!-- Form -->
+<!-- LAYOUTS (WS04) -->
+<section id="layouts">
+
+    <h2>Grid Layout</h2>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <h2>Flexbox Layout</h2>
+    <div class="flex-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Responsive Box</h2>
+    <div class="responsive-box">
+        Resize the window to see the effect
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
     <h2>Contact Me</h2>
     <form>
         <label for="name">Name:</label>
@@ -103,6 +146,13 @@
 
         <input type="submit" value="Submit">
     </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Copyright 2025</p>
+</footer>
 
 </body>
 </html>
